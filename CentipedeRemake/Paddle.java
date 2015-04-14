@@ -1,0 +1,53 @@
+import java.awt.*;
+import acm.graphics.*;
+   
+    public class Paddle
+   {      
+      private int myX;         
+      private int myY;
+      private int myWidth;
+      private int myLength;
+      private Color myColor; 
+   
+     //constructors
+       public Paddle()         //default constructor
+      {
+         myX = 370; 
+         myY = 570; 
+         myWidth = 60; 
+         myLength = 10;
+         myColor = Color.BLACK;
+      }
+       public Paddle(int x, int y, int xWidth, int yWidth, Color c)
+      {
+         myX = x; 
+         myY = y; 
+         myWidth = xWidth; 
+         myLength = yWidth;
+         myColor = c;
+      }
+   	// accessor methods  (one for each field)
+       public int getX() 
+      { 
+         return myX;
+      }
+       public int getY() 
+      { 
+         return myY;
+      }
+   
+       public Color getColor() 
+      { 
+         return myColor;
+      }
+     // modifier methods  (one for each field)
+       public void setX(int x)
+      {
+         myX = x;
+      }
+       public void setY(int y)
+      {
+         myY = y;
+      }
+
+}
